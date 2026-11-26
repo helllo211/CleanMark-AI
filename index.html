@@ -29,6 +29,7 @@
 <section class="features"><article class="feature"><b>🔒 Browser-first</b><p>Selected images are processed locally in this prototype.</p></article><article class="feature"><b>🖌️ Manual selection</b><p>Paint only over the area you want to repair.</p></article><article class="feature"><b>📥 Download</b><p>Save your edited image as a PNG.</p></article></section>
 <footer class="footer">© <span id="year"></span> CleanMark AI · Use only on content you own or have permission to edit.</footer>
 </main>
+<script src="detector.js"></script>
 <script>
 const $=id=>document.getElementById(id),photo=$('photo'),overlay=$('overlay'),ctx=photo.getContext('2d'),octx=overlay.getContext('2d');let original=null,undoState=null,drawing=false,hasMask=false;
 $('year').textContent=new Date().getFullYear();
