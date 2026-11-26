@@ -19,6 +19,7 @@
 <div class="toolbar">
 <div class="group"><button class="btn" id="choose">＋ Upload image</button><label class="small">Brush <input id="size" type="range" min="8" max="90" value="30"></label></div>
 <div class="group"><button class="btn" id="undo" disabled>Undo</button><button class="btn" id="reset" disabled>Reset</button><button class="btn primary" id="clean" disabled>Clean area</button><button class="btn primary" id="download" disabled>Download</button></div>
+<button class="btn" id="scan" disabled>Scan corners</button>
 </div>
 <div class="stage" id="stage"><div class="empty" id="empty"><div class="uploadicon">⇧</div><h3>Drop an image here</h3><p>or choose a JPG, PNG or WEBP file</p><button class="btn primary" id="choose2">Choose image</button></div><canvas id="photo"></canvas><canvas id="overlay"></canvas></div>
 <p class="note">How to use: Upload an image → paint over the unwanted mark → select Clean area → download. This demo uses a simple local pixel-neighbour fill, not advanced AI inpainting; inspect results carefully.</p>
